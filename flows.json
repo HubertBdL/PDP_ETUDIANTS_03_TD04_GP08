@@ -1,0 +1,123 @@
+[
+    {
+        "id": "9064da6288075ce0",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d5f3c6d14a57684",
+        "type": "mqtt in",
+        "z": "9064da6288075ce0",
+        "name": "",
+        "topic": " Le topic sur lequel votre groupe publie la température ou l'humidité de votre capteur.",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c829be9349765822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "7bf76a2c8119cc71"
+            ]
+        ]
+    },
+    {
+        "id": "e326cb5b7ea65842",
+        "type": "mqtt in",
+        "z": "9064da6288075ce0",
+        "name": "",
+        "topic": " Le topic sur lequel votre groupe publie la température ou l'humidité de votre capteur.",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c829be9349765822",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "7bf76a2c8119cc71"
+            ]
+        ]
+    },
+    {
+        "id": "7bf76a2c8119cc71",
+        "type": "ui_chart",
+        "z": "9064da6288075ce0",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1F77B4",
+            "#AEC7E8",
+            "#FF7F0E",
+            "#2CA02C",
+            "#98DF8A",
+            "#D62728",
+            "#FF9896",
+            "#9467BD",
+            "#C5B0D5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 930,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c829be9349765822",
+        "type": "mqtt-broker",
+        "name": "Broker",
+        "broker": "27cc61dbaffc4da08cd0081cabd8cf01.s2.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
